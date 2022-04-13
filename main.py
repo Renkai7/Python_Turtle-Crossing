@@ -31,6 +31,11 @@ while game_is_on:
         if car.distance(player) < 20:
             game_is_on = False
             scoreboard.game_over()
+        # removes car from list and takes turtle off of screen
+        if car.xcor() < -300:
+            car_manager.all_cars.remove(car)
+            car.hideturtle()
+
 
     # Detect player crossing finish line
     if player.is_at_finish_line():

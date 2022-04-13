@@ -1,6 +1,5 @@
 from turtle import Turtle
 import random
-from scoreboard import Scoreboard
 
 COLORS = ["red", "orange", "yellow", "green", "blue", "purple"]
 STARTING_MOVE_DISTANCE = 5
